@@ -748,7 +748,7 @@ h1, h2, h3, h4 {
         margin: auto;
         padding-bottom: 50px;
         align-items: center;
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .team__item:first-child {
@@ -756,7 +756,7 @@ h1, h2, h3, h4 {
     }
 
     .team__item:last-child {
-    margin-top: 60px;
+    margin-top: 70px;
     }
 
     .name__text {
