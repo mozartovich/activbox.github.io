@@ -99,7 +99,7 @@ h1, h2, h3, h4 {
 .intro__title {
     font-family: 'HelveticaNeueLTPro-Lt', sans-serif;
     font-size: 45px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 0;
     letter-spacing: 2px;
     color: #121212;
@@ -666,7 +666,7 @@ h1, h2, h3, h4 {
     }
     .intro__scroll {
 
-        top: 210px;
+        display: none;
     }
 
 
