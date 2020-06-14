@@ -1,0 +1,14 @@
+{
+    "name": "Investigator",
+    "short_name": "Investigator",
+    "icons": [
+        {
+            "src": "images/favicons/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
