@@ -121,7 +121,7 @@ h1, h2, h3, h4 {
 .btn {
     padding: 16px 48px 16px 48px;
     text-decoration: none;
-    border: 1px solid #333;
+    border: 1px solid #1d1d1d;
     font-size: 13px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
@@ -131,7 +131,7 @@ h1, h2, h3, h4 {
 }
 
 .btn:hover {
-    background-color: #121212;
+    background-color: #1d1d1d;
     color: #fff;
     transition: background 0.2s linear;
     transition: all 0.2s linear;
@@ -671,7 +671,7 @@ h1, h2, h3, h4 {
     }
 
     .intro__subtitle {
-        font-size: 24px;
+        font-size: 20px;
 
     }
 
