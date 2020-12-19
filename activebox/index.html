@@ -1,419 +1,315 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Автовыкуп</title>
+		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
 
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
 
-
-    <meta name="description" content="Описание страницы" />
-    <meta name="google" content="notranslate" />
-
-    <title>ActiveBox</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	</head>
 <body>
-<!--Sprite-->
-<svg style="display: none;">
 
-    <symbol id="facebook" viewBox="0 0 430.113 430.114">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MWQKJF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MWQKJF');</script>
+<!-- End Google Tag Manager -->
 
-        <g>
-            <path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
-                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
-                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
-        </g>
-    </symbol>
+<!--start-banner-->
+	<div class="banner" id="home">
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<div class="header_phone">
+					<p>+38 097 <span>391 94 97</span></p>
+					<p>  Viber,<span>Whatsapp</span></p>
+					</div>
+				</div>
+				<div class="navigation">
+					 <span class="menu"></span> 
+						<ul class="navig">
+							<li>
+								<a href="#home" class="scroll">
+									ГЛАВНАЯ
+								</a>
+							</li>
+							<li>
+								<a href="#predlogenie" class="scroll">
+									УСЛУГИ
+								</a>
+							</li>
+							<li>
+								<a href="#contacts" class="scroll">
+									КОНТАКТЫ
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="banner-btm">
+				<div id="top" class="callbacks_container">
+					<div class="banner-bottom">
+						<h1>ВЫКУП АВТО В БЕЛОЙ ЦЕРКВИ</h1>
+						<h1><span>БЫСТРО, ЧЕСТНО, ДОРОГО</span></h1>
+						<button class="lending_button pop_form">ОСТАВИТЬ ЗАЯВКУ</button>
+					</div>
+			    </div>
+			  <div class="clearfix"> </div>
+			</div>
+		</div>
+	<a href="#predlogenie" class="scroll"><div class="arrow_down"><img src="images/arrow.png" alt="arrow"></div></a>
+	</div>	
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+	<!--end-banner-->
 
-    <symbol id="twitter" viewBox="0 0 512 512">
-        <g>
-            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                C480.224,136.96,497.728,118.496,512,97.248z"/>
-    </g>
-    </symbol>
+	<!--start-predlogenie-->
+	<div class="predlogenie" id="predlogenie">
+		<div class="container">
+			<div class="predlogenie-main">
+				<h3 class="block_title">УСЛУГИ <span></span></h3>
+			</div>
+			<div class="predlogenie-bottom">
+			<div class="abt">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 predlogenie_info">
+					<div class="icons_wrapper">
+						<img src="images/predlogenie_1.png" alt="predlogenie_1">
+					</div>
+					<p class="predlogenie_heading">СРОЧНЫЙ ВЫКУП</p>
+					<p class="predlogenie_text">Выкупим автомобиль в течении дня после осмотра.</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 predlogenie_info">
+					<div class="icons_wrapper">
+						<img src="images/predlogenie_2.png" alt="predlogenie_2">
+					</div>
+					<p class="predlogenie_heading">ПОСЛЕ ДТП</p>
+					<p class="predlogenie_text">Занимаемся востановлением и продажей автомобилей после ДТП.</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 predlogenie_info">
+					<div class="icons_wrapper">
+						<img src="images/predlogenie_3.png" alt="predlogenie_3">
+					</div>
+					<p class="predlogenie_heading">ВСЕ МАРКИ</p>
+					<p class="predlogenie_text">Мы готовы предложить свою цену независимо от марки и года выпуска автомобиля.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="yslugi_button_wrapper">
+					<button class="lending_button pop_form">ОСТАВИТЬ ЗАЯВКУ</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-predlogenie-->
 
-    <symbol id="linkedin" viewBox="0 0 512 512">
-                <path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/>
-    </symbol>
+	<!--start-contacts-->
+	<div class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts-main">
+				<h3 class="block_title">КОНТАКТЫ <span></span></h3>
+			</div>
+			<div class="contacts-bottom">
+			<div class="abt">
+				<form class="callback_form" id="form_contacts" action="javascript:void(null);" onsubmit="form_contacts()">
+					<input type="text" name="name" id="form_contacts_name" class="callback_input" placeholder="Имя">
+					<input type="text" name="email" id="form_contacts_email" class="callback_input" placeholder="Телефон">
+					<button class="lending_button">ОСТАВИТЬ ЗАЯВКУ</button>
+			</form>
+				<p><span></span>&nbsp;&nbsp;+38 097 391 94 97<span></span></p>
+				<p><span></span>mozartovich@gmail.com</p>
+				<p class="adress">07300, Украина, г. Белая Церковь</p>
+			</div>
+			<div class="copyraiting">
+				<div class="right">
+					ALL RIGHTS RESERVED. COPYRIGHT © 2016-2021
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--end-contacts-->
 
-</svg>
+	<!--start-pop_ups-->
+	<div class="wrapper_form">
+		<div class="form_body">
+			<div class="form_close"><img src="images/croos.png" alt="croos"></div>
+			<p class="form_heading"><span>Как с вами</span> связаться?</p>
+			<form class="callback_form" id="form_pop" action="javascript:void(null);" onsubmit="form_pop()">
+					<input type="text" name="name" id="form_pop_name" class="callback_input" placeholder="Имя">
+					<input type="text" name="email" id="form_pop_email" class="callback_input" placeholder="Телефон">
+					<button class="lending_button">ЖДУ ЗВОНКА</button>
+			</form>
+		</div>
+	</div>
 
-<!-- Header -->
-<header class="header" id="header">
-   <div class="container">
-       <div class="header__inner">
-           <div class="header__logo">
-               <img src="img/activebox-logo.png" alt="">
-           </div>
+	<div class="wrapper_succses">
+		<div class="succses_body">
+			<p>Ваша заявка успешно отправленна!</p>
+		</div>
+	</div>
+	<!--end-pop_ups-->
+	<script>
+		jQuery(function($){
+		   $("#form_pop_email").mask("+38 (999) 999-9999");
+		   $("#form_contacts_email").mask("+38 (999) 999-9999");
+		   $("#form_callback_email").mask("+38 (999) 999-9999");
+		});
+	    $(".wrapper_form").click( function(event){
+	      if( $(event.target).closest(".form_body").length && $(".wrapper_form").hasClass("do") ) 
+	        return;
+	      $(".wrapper_form").hide();
+	      $(".wrapper_form").removeClass("do");
+	      event.stopPropagation();
+	    });
+	    $(".wrapper_succses").click( function(event){
+	      if( $(event.target).closest(".succses_body").length && $(".wrapper_form").hasClass("do") ) 
+	        return;
+	      $(".wrapper_succses").hide();
+	      event.stopPropagation();
+	    });
+	    $('.form_close').click( function(){
+	    	$(".wrapper_form").hide();
+	    	$(".wrapper_form").removeClass("do");
+	    });
+	    $('.pop_form').click( function(){
+	    	$(".wrapper_form").show();
+	    	$(".wrapper_form").addClass("do");
+	    });
+	</script>
 
-           <nav class="nav" id="nav">
-               <a class="nav__link" href="#" data-scroll="#features">Features</a>
-               <a class="nav__link" href="#" data-scroll="#works">Works</a>
-               <a class="nav__link" href="#" data-scroll="#team">Our Team</a>
-               <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
-               <a class="nav__link" href="#" data-scroll="#download">Download</a>
-           </nav>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
 
-           <button class="burger" type="button" id="navToggle">
-               <span class="burger__item">Menu</span>
-           </button>
+	<script type="text/javascript" language="javascript">
+	 	function form_callback() {
+	 		$('#form_callback_name').attr('placeholder','');
+	 		$('#form_callback_name').attr('placeholder','');
+	 		if( $('#form_callback_name').val() != "" && $('#form_callback_email').val() != ""){
+	 			var data   = $('#form_callback').serialize();
+		        $.ajax({
+		          type: 'POST',
+		          url: 'mail.php',
+		          data: data,
+		          success: function(data) {
+		            $(".wrapper_form").hide();
+		            $(".wrapper_succses").show();
+		            $('#form_callback_name').val('');
+		            $('#form_callback_email').val('');
+		            $('#form_callback_name').removeClass('empty');
+		            $('#form_callback_email').removeClass('empty');
+		            $('#form_callback_name').attr('placeholder','Имя');
+	 				$('#form_callback_email').attr('placeholder','Телефон');
+		          },
+		          error:  function(xhr, str){
+			    	alert('Возникла ошибка: ' + xhr.responseCode);
+		          }
+		        });
+	 		}else{
+	 			if (!$('#form_callback_name').val()) {
+	 				$('#form_callback_name').addClass('empty');
+	 				$('#form_callback_name').attr('placeholder','Введите имя!');
+	 			};
+	 			if (!$('#form_callback_email').val()) {
+	 				$('#form_callback_email').addClass('empty');
+	 				$('#form_callback_email').attr('placeholder','Введите телефон!');
+	 			};
+	 		}
+	    }
 
-       </div> <!--Header__Inner-->
-    </div> <!--Header Container-->
-</header>
+	    function form_contacts() {
+	 		$('#form_contacts_name').attr('placeholder','');
+	 		$('#form_contacts_name').attr('placeholder','');
+	 		if( $('#form_contacts_name').val() != "" && $('#form_contacts_email').val() != ""){
+	 			var data   = $('#form_contacts').serialize();
+		        $.ajax({
+		          type: 'POST',
+		          url: 'mail.php',
+		          data: data,
+		          success: function(data) {
+		            $(".wrapper_form").hide();
+		            $(".wrapper_succses").show();
+		            $('#form_contacts_name').val('');
+		            $('#form_contacts_email').val('');
+		            $('#form_contacts_name').removeClass('empty');
+		            $('#form_contacts_email').removeClass('empty');
+		            $('#form_contacts_name').attr('placeholder','Имя');
+	 				$('#form_contacts_email').attr('placeholder','Телефон');
+		          },
+		          error:  function(xhr, str){
+			    	alert('Возникла ошибка: ' + xhr.responseCode);
+		          }
+		        });
+	 		}else{
+	 			if (!$('#form_contacts_name').val()) {
+	 				$('#form_contacts_name').addClass('empty');
+	 				$('#form_contacts_name').attr('placeholder','Введите имя!');
+	 			};
+	 			if (!$('#form_contacts_email').val()) {
+	 				$('#form_contacts_email').addClass('empty');
+	 				$('#form_contacts_email').attr('placeholder','Введите телефон!');
+	 			};
+	 		}
+	    }
 
-<!-- Intro -->
-
-<div class="intro" id="intro">
-    <div class="container">
-       <div class="intro__inner">
-            <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
-            <h2 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-            vel scelerisque nisl consectetur et.</h2>
-            <a class="btn btn--red" href="#">Find out more</a>
-        </div>
-    </div>
-</div>
-
-<!-- Features -->
-<div class="container" id="features">
-    <div class="features">
-        <div class="features__item">
-            <img class=features__icon src="img/features/feature-1.png" alt="">
-            <h4 class="features__title">Easily Customised</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-
-        <div class="features__item">
-            <img class=features__icon src="img/features/feature-2.png" alt="">
-            <h4 class="features__title">Responsive REady</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-
-         <div class="features__item">
-            <img class=features__icon src="img/features/feature-3.png" alt="">
-            <h4 class="features__title">Modern Design</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-        <div class="features__item">
-            <img class=features__icon src="img/features/feature-4.png" alt="">
-            <h4 class="features__title">Clean Code</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-
-        <div class="features__item">
-            <img class=features__icon src="img/features/feature-5.png" alt="">
-            <h4 class="features__title">Ready to Ship</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-
-          <div class="features__item">
-            <img class=features__icon src="img/features/feature-6.png" alt="">
-            <h4 class="features__title">Download for Free</h4>
-            <div class="features__text">ras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </div>
-        </div>
-    </div> <!-- Features -->
-</div> <!-- Features__Container -->
-
-<!--Works-->
-<div class="works" id="works">
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-1.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-2.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-3.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-4.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-5.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-6.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-7.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-    <div class="works__item">
-        <img class="works__photo"src="img/works/work-8.jpg" alt="">
-        <div class="works__content">
-            <div class="works__title">Project name</div>
-            <div class="works__text">user interfase Design</div>
-        </div>
-    </div>
-</div> <!--Works-->
-
-<!-- Team -->
-<div class="team" id="team">
-    <div class="container">
-        <div class="team__inner">
-
-            <div class="team__item">
-                <img class="team__photo"src="img/team/team-1.jpg" alt="">
-                <div class="team__name">Ruth Woods</div>
-                <div class="team__prof">CEO</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-
-                <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="team__item">
-                <img class="team__photo"src="img/team/team-2.jpg" alt="">
-                <div class="team__name">Timothy Reed</div>
-                <div class="team__prof">Develroper</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                 <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-             <div class="team__item">
-                <img class="team__photo"src="img/team/team-3.jpg" alt="">
-                <div class="team__name">Victoria Valdes</div>
-                <div class="team__prof">UI Designer</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                 <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-             <div class="team__item">
-                <img class="team__photo"src="img/team/team-4.jpg" alt="">
-                <div class="team__name">Beverly Little</div>
-                <div class="team__prof">Data scientist</div>
-                <div class="team__text">
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p> Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-                </div>
-                 <div class="social">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-        </div> <!-- Team__Inner -->
-    </div> <!-- Team__Container -->
-</div> <!-- Team -->
-
-<!--Testimonials-->
-<div class="reviews" id="reviews">
-
-       <div class="reviews__slider" id="reviewsSlider">
-
-           <div class="slick-item">
-                <div class="reviews__item">
-                    <div class="reviews__photo">
-                        <img class="reviews__img" src="img/reviews/review-1.jpg" alt="">
-                    </div>
-                    <div class="reviews__content">
-                        <div class="reviews__text">Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
-                        <div class="reviews__author">Joanna Right, Interaction Designer at XYZ</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slick-item">
-                <div class="reviews__item">
-                    <div class="reviews__photo">
-                        <img class="reviews__img" src="img/reviews/review-2.jpg" alt="">
-                    </div>
-                    <div class="reviews__content">
-                        <div class="reviews__text">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
-                        <div class="reviews__author">Susan Sims, Photografer at XYZ</div>
-                    </div>
-                </div>
-
-        </div> <!--Slider-->
-
-    </div> <!--Container-->
-</div> <!--Reviews-->
-
-<!--Download-->
-<div class="download" id="download">
-    <div class="container">
-        <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
-        <div class="download__text"><p>Fusce dapibus, tellus ac cursus commodop</p></div>
-        <a class="btn btn--red btn--long" href="">Download Here</a>
-    </div>
-</div>
-
-<!--Footer-->
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-
-            <div class="footer__block">
-                 <h4 class="footer__title">Location</h4>
-                 <adress class="footer__adress">
-                     <div>3481 Melrose Place</div>
-                     <div>Beverly Hills, CA 90210</div>
-                 </adress>
-            </div>
-
-        <div class="footer__block">
-                 <h4 class="footer__title">Share With Love</h4>
-
-                <div class="social social--footer">
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#twitter"></use>
-                        </svg>
-                    </a>
-                    <a class="social__item" href="#" target="_blank">
-                        <svg class="social__icon">
-                            <use xlink:href="#linkedin"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer__block">
-                 <h4 class="footer__title">About ActiveBox</h4>
-                 <adress class="footer__adress">
-                     <div>Cras justo odio, dapibus ac facilisis in, egestas eget. </div>
-                     <div>Donec ullamcorper nulla non metus auctor fringilla.</div>
-                 </adress>
-            </div>
-
-        </div>
-    </div>
-    <div class="copyright">
-       <div class="container">
-            <div class="copyright__text">
-                <div>Copyright © 2015 ActiveBox. All Rights Reserved</div>
-                <div>Made <span>by Kamal Chaneman</span></div>
-            </div>
-        </div> <!--Footer__Inner-->
-    </div> <!--Footer__Container-->
-</footer> <!--Footer-->
-
-
-<!--JavaScript-->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="app.js"></script>
-
+	    function form_pop() {
+	 		$('#form_pop_name').attr('placeholder','');
+	 		$('#form_pop_name').attr('placeholder','');
+	 		if( $('#form_pop_name').val() != "" && $('#form_pop_email').val() != ""){
+	 			var data   = $('#form_pop').serialize();
+		        $.ajax({
+		          type: 'POST',
+		          url: 'mail.php',
+		          data: data,
+		          success: function(data) {
+		            $(".wrapper_form").hide();
+		            $(".wrapper_succses").show();
+		            $('#form_pop_name').val('');
+		            $('#form_pop_email').val('');
+		            $('#form_pop_name').removeClass('empty');
+		            $('#form_pop_email').removeClass('empty');
+		            $('#form_pop_name').attr('placeholder','Имя');
+	 				$('#form_pop_email').attr('placeholder','Телефон');
+		          },
+		          error:  function(xhr, str){
+			    	alert('Возникла ошибка: ' + xhr.responseCode);
+		          }
+		        });
+	 		}else{
+	 			if (!$('#form_pop_name').val()) {
+	 				$('#form_pop_name').addClass('empty');
+	 				$('#form_pop_name').attr('placeholder','Введите имя!');
+	 			};
+	 			if (!$('#form_pop_email').val()) {
+	 				$('#form_pop_email').addClass('empty');
+	 				$('#form_pop_email').attr('placeholder','Введите телефон!');
+	 			};
+	 		}
+	    }
+	</script>
 </body>
 </html>
